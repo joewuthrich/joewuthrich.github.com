@@ -29,6 +29,7 @@
       background-color: #f6f6f6;
       font-family: "Segoe UI", Arial, sans-serif;
       user-select: none;
+      overflow: hidden;
     }
 
     #container {
@@ -51,7 +52,7 @@
       height: calc(100% - 35px);
       display: flex;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
     }
 
@@ -65,8 +66,10 @@
       font-size: 20px;
       padding-left: 20px;
       display: flex;
-      justify-content: flex-start;
+      text-align: center;
+      justify-content: center;
       align-items: center;
+      margin-bottom: 2px;
     }
 
     .a-link-icon {
@@ -76,12 +79,13 @@
     .link-icon {
       height: 18px;
       width: 18px;
-      transform: translateY(2px);
+      transform: translateY(3px);
+      fill: #8ab4f8;
     }
 
     .link-icon:hover {
       cursor: pointer;
-      fill: #3a3a3a;
+      fill: rgb(3, 41, 41);
     }
 
     #portfolio-link {
@@ -97,6 +101,7 @@
       font-size: 15px;
       color: #000000;
       text-decoration: none;
+      font-weight: lighter;
     }
 
     #portfolio-link:hover,
@@ -104,6 +109,15 @@
     #portfolio-link:visited {
       cursor: pointer;
       color: #3a3a3a;
+    }
+
+    #divider {
+      height: 1px;
+      background-color: black;
+      width: 80%;
+      margin: 10px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 
@@ -117,6 +131,7 @@
           ><div>My Portfolio</div></a
         >
         <div id="header">My Projects</div>
+        <div id="divider"></div>
         <div class="project">Hoop33 Client/Trainer Platform</div>
         <div class="project">
           Comment Marker
